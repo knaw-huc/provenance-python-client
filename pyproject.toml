@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "provenance-client"
+version = "0.1.0"
+description = "Client for the HuC-DI Provenance server"
+authors = ["Bram Buitendijk <bram.buitendijk@di.huc.knaw.nl>"]
+readme = "README.md"
+packages = [{ include = "provenance" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+icecream = "^2.1.3"
+loguru = "^0.7.0"
+requests = "^2.31.0"
+uri = { git = "https://github.com/marrow/uri.git", rev = "5b58db87451ca4680004a8993a56bfc4dafff4d4" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
